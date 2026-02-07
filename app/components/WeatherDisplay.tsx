@@ -14,7 +14,11 @@ export function WeatherDisplay({ weatherResponse }: { weatherResponse: WeatherRe
 
     // From here, TypeScript knows weatherResponse is WeatherInfo (success: true)
     if (weatherResponse.data == null) {
-        return (<div>No data found</div>)
+        return (
+             <div className="flex flex-col justify-center items-center h-full p-4">
+                <h1 className="text-xl text-red-500">No data found</h1>
+            </div>
+            )
     }
 
     // destructuring the data 

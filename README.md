@@ -50,4 +50,4 @@ The OpenWeather API call is proxied through a Next.js API route (`/api/weather`)
 ## Links for Github and Deployment on Vercel
 
 - [Github repository](https://github.com/tony2tones/search-city-weather)
-- The Vercel deployed [City weather search application](https://search-city-weather-dlw9mk8dz-tony2tones-projects.vercel.app/) 
+- The Vercel deployed [City weather search application](https://search-city-weather.vercel.app/) 
