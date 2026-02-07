@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, install npm dependencies by running the following command:
 
-```
+```bash
 npm install
 ```
 
@@ -21,12 +21,6 @@ run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -37,11 +31,11 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## TechStack and libraries used
 
-[Next.js](https://nextjs.org)
-[Next.js API Routes](https://nextjs.org/blog/building-apis-with-nextjs)
-[TanStack](https://tanstack.com/)
-[Tailwindcss](https://tailwindcss.com/)
-[open-weather-icons](https://www.npmjs.com/package/open-weather-icons?activeTab=code)
+- [Next.js](https://nextjs.org)
+- [Next.js API Routes](https://nextjs.org/blog/building-apis-with-nextjs)
+- [TanStack](https://tanstack.com/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [open-weather-icons](https://www.npmjs.com/package/open-weather-icons?activeTab=code)
 
 ## Design Decisions
 
@@ -59,8 +53,7 @@ This provides:
 ### Next.js API Routes
 The OpenWeather API call is proxied through a Next.js API route (`/api/weather`). This keeps the API key secure and on the server-side and avoids exposing it on the Client side.
 
-## Deploy on Vercel
+## Links for Github and Deployment on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Github repository](https://github.com/tony2tones/search-city-weather)
+- The Vercel deployed [City weather search application](https://search-city-weather-dlw9mk8dz-tony2tones-projects.vercel.app/) 
