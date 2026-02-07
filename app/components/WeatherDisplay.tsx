@@ -28,7 +28,7 @@ export function WeatherDisplay({ weatherResponse }: { weatherResponse: WeatherRe
         <div className="flex flex-col md:flex-row">
             <div className="flex flex-col p-4 m-4 gap-2">
                 <h1 className="text-5xl">{name}</h1>
-                <h3 className="text-9xl">{kelvinToCelsius(temp)}</h3>
+                <h3 className="text-9xl">{kelvinToCelsius(temp)}<span className="text-3xl align-top">°C</span></h3>
             <h3 className="text-4xl text-center">{description}</h3>
             </div>
             {icon && (

@@ -2,7 +2,22 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, install npm dependencies by running the following command:
+
+```
+npm install
+```
+
+Ensure that you have a valid apikey from OpenWeather if not, be sure to register and login to retreive your key [OpenWeather API key](https://home.openweathermap.org/api_keys)
+
+Add API key to your environment variables
+
+// in your project's .env file add the following
+```
+weatherAPI="YOUR_API_KEY"
+```
+
+run the development server:
 
 ```bash
 npm run dev
@@ -20,14 +35,29 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## TechStack and libraries used
 
-To learn more about Next.js, take a look at the following resources:
+[Next.js](https://nextjs.org)
+[Next.js API Routes](https://nextjs.org/blog/building-apis-with-nextjs)
+[TanStack](https://tanstack.com/)
+[Tailwindcss](https://tailwindcss.com/)
+[open-weather-icons](https://www.npmjs.com/package/open-weather-icons?activeTab=code)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Design Decisions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Temperature Display
+Temperature is displayed in ***Celsius*** (°C).
+
+### TanStack Query
+
+Used for data fetching and server state management.
+This provides:
+- Built-in loading and error states
+- Automatic caching of API responses
+- Simple refetching logic
+
+### Next.js API Routes
+The OpenWeather API call is proxied through a Next.js API route (`/api/weather`). This keeps the API key secure and on the server-side and avoids exposing it on the Client side.
 
 ## Deploy on Vercel
 
