@@ -36,6 +36,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Temperature Display
 Temperature is displayed in ***Celsius*** (°C).
 
+## Archecture
+
+ - Using reusable components with single responsibility principle
+ - composition with reusable components
+ - Utilizing Union type for API responses
+
 ### TanStack Query
 
 Used for data fetching and server state management.
