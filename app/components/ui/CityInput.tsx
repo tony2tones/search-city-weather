@@ -1,5 +1,5 @@
 
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent } from "react";
 
 type CityInputProps = {
     onChange: (event: ChangeEvent<HTMLInputElement, Element>) => void;
