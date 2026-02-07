@@ -42,7 +42,6 @@ export default function Home() {
         </form>
         <div className="min-h-72">
           {isFetching && <WeatherDisplaySkeleton />}
-
           {weather && !isFetching && <WeatherDisplay weatherResponse={weather} />}
         </div>
       </main>
